@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Convertidor de Divisas</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.16/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="estilos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   
+  </head>
+  <body>
+    <img src="img/logo.png" alt="" class="money-img" />
+    <h1>Convertidor de Divisas</h1>
+    <p class="subtitulo">Elija la moneda y la cantidad para obtener el tipo de cambio</p>
+    <form action="#">
+        <div class="amount">
+          <p>Introduzca la cantidad</p>
+          <input type="text" value="1">
+        </div>
+        <div class="drop-list">
+          <div class="from">
+            <p>From</p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/us.png" alt="flag"> 
+              <select> <!-- insertadas por JavaScript -->  </select>
+            </div>
+          </div>
+          <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+          <div class="to">
+            <p>To</p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/ar.png" alt="flag">
+              <select> <!-- insertadas por JavaScript --> </select>
+            </div>
+          </div>
+        </div>
+        <div class="exchange-rate"></div>
+        <button>convertir</button>
+      </form>
+    </div>
+
+    <script src="js/country_list.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
