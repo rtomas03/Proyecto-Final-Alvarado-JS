@@ -15,14 +15,15 @@
   }
   
   h1 {
-    color: #08bbf1e1;
+    color: #08bbf1e1; 
+    justify-content: center;
   }
   
  .subtitulo{
     text-align: center;
   }
   .money-img {
-    width: 250px;
+    width: 300px;
   }
   .title{
     font-size: 25px;
@@ -107,10 +108,3 @@
   form button:hover{
     background: #5da4df;
   }
-  @media screen and (max-width: 450px) {
-    body {
-      width: 350px; 
-      display:inline-block; 
-      align-items: center;
-     align-content: center;
-} }
