@@ -11,6 +11,7 @@
     height: 100vh;
     margin: 0;
     padding: 20px;
+    width: auto;
   }
   
   h1 {
@@ -106,3 +107,10 @@
   form button:hover{
     background: #5da4df;
   }
+  @media screen and (max-width: 450px) {
+    body {
+      width: 350px; 
+      display:inline-block; 
+      align-items: center;
+     align-content: center;
+} }
