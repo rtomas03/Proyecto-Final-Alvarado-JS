@@ -3,14 +3,9 @@ fromCurrency = document.querySelector(".from select"),
 toCurrency = document.querySelector(".to select"),
 getButton = document.querySelector("form button");
 
-if (window.localStorage.getItem('rates_all')) {
-    const rates_all = JSON.parse(window.localStorage.getItem('rates_all'));
-    fetch(`https://v6.exchangerate-api.com/v6/eafe19239253ca2c3fa6aaa0/latest/USD`)
-    .then(response => response.json())
-    .then(result =>{
-        window.localStorage.setItem('rates_all', JSON.stringify(result.conversion_rates));
+
         for (let i = 0; i < dropList.length; i++) { 
-            for(let currency_code in result.conversion_rates){
+            for(let currency_code in country_list){
 
                 let selected = i == 0 ? currency_code == "USD" ? "selected" : "" : currency_code == "ARS" ? "selected" : "";
                 let optionTag = `<option value="${currency_code}" ${selected}>${currency_code}</option>`;
@@ -22,9 +17,7 @@ if (window.localStorage.getItem('rates_all')) {
                 });
        
         } 
-     })
-     
-}
+
 
 function loadFlag(element){
     for(let code in country_list){
